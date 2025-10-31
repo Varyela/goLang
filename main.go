@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-	// Пример использования DayActionInfo
 	dayData := "678,0h50m"
 	weight := 70.0  // кг
 	height := 1.75  // м
@@ -17,7 +16,6 @@ func main() {
 	fmt.Println(dayInfo)
 	fmt.Println()
 
-	// Пример использования TrainingInfo
 	trainingData := "3456,Бег,1h30m"
 	trainingInfo, err := spentcalories.TrainingInfo(trainingData, weight, height)
 	if err != nil {
@@ -28,7 +26,6 @@ func main() {
 	}
 	fmt.Println()
 
-	// Еще один пример
 	trainingData2 := "5000,Ходьба,2h15m"
 	trainingInfo2, err := spentcalories.TrainingInfo(trainingData2, weight, height)
 	if err != nil {
